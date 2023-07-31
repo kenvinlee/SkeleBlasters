@@ -36,11 +36,11 @@ public class Character extends Collision {
 	private float width, height;
 	private boolean isWalking;
 
-	//okay you're coupling because you're a piece of shit
+	//okay you're coupling because you were in a time crunch for a 24 hour hackathon
 	//this shouldn't break
 	//but don't reuse this code for multiplayer games please.
 	//2 players max..
-	//I'm going to state that I'm an idiot for doing things this way and I should have known better
+	//don't do this again
 	
 	public Character(int player) throws SlickException
 	{
@@ -127,7 +127,7 @@ public class Character extends Collision {
 		this.setRoundRect(x, y, width, height, width/2);
 	}
 
-	/* The controls are here (coupling made this a bitttttch)
+	/* The controls are here (coupling made this not so easy)
 	 * So just what the controls actually do in relation to the positioning of the characters
 	 */
 	public void update(GameContainer gc, Input input, int delta) throws SlickException{
